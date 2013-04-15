@@ -1,0 +1,19 @@
+<div xmlns:ui="facadus/uiobject" class="form">
+
+    <ui:module src="widgets/Panel" import="PanelWidget">
+        <ui:region use="addHeader">
+
+            <div>Form</div>
+
+        </ui:region>
+        <ui:region use="addContent">
+
+            <div>
+                <ui:module src="widgets/Input" import="Input" name="text"/>
+                <ui:module src="widgets/Button" import="Button" name="button" text="Submit"/>
+            </div>
+
+        </ui:region>
+    </ui:module>
+
+</div>
