@@ -11,11 +11,11 @@ export class Form extends facadus.UIObject {
         'change text': Form.prototype._onChange
     };
 
-    private _onSubmit(e) {
+    private _onSubmit(e:Event) {
         e.preventDefault();
     }
 
-    private _onChange(e) {
+    private _onChange(e:Event) {
         e.preventDefault();
     }
 }
