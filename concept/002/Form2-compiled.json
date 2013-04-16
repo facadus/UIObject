@@ -1,0 +1,32 @@
+{
+    "template": "<div class=\"form\"><div id=\"module1\"></div></div>",
+    "modules": {
+        "module1": {
+            "src": "widgets/Panel",
+            "import": "PanelWidget",
+            "regions": {
+                "addHeader": {
+                    "template": "<div>Form</div>"
+                },
+                "addContent": {
+                    "template": "<div><div id=\"module2\"></div><div id=\"module3\"></div></div>",
+                    "modules": {
+                        "module2": {
+                            "src": "widgets/Input",
+                            "import": "Input",
+                            "name": "text"
+                        },
+                        "module3": {
+                            "src": "widgets/Button",
+                            "import": "Button",
+                            "name": "button",
+                            "options": {
+                                "text": "Submit"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
