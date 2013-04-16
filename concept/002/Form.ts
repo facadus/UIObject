@@ -6,8 +6,8 @@ import template = module('template!./Form.html');
 
 export class Form extends facadus.UIObject {
     template = <string>template;
-    header:facadus.UIObject;
-    content:facadus.UIObject;
+    button:facadus.UIObject;
+    text:facadus.UIObject;
     events = {
         'click button': Form.prototype._onSubmit,
         'change text': Form.prototype._onChange
